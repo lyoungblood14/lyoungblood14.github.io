@@ -1,0 +1,294 @@
+/*to keep myself sane, I adapted my previous .css but did not take elements out, otherwise I
+am afraid I will lose elements.*/
+
+html { /* this sets everything up */
+    margin: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'KoHo', sans-serif;
+    font-weight: normal;
+    font-style: normal;  
+    line-height: 1.4em; 
+    background-image: url("images/white-plaster-texture.png");
+    
+    /*find a better background */
+  }
+  
+  /* Body tag automatically makes vertical flexbox */
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+    margin-left: 0px;
+    padding: 0;
+    
+  }
+  
+  /* default look for all layout parts
+  header, main, footer {
+    margin-bottom: 30px;
+    padding: 10px;
+    min-height: 35px;
+    border-radius: 5px;
+    background-color: #575c64;
+  }
+   */
+ 
+
+/* SECTIONSTYLES */
+
+header {
+    margin: 0;
+    font-family: 'Josefin Slab', serif;
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    color: #0F401A;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: baseline;
+    width: 100%;
+    font-size: 60px;
+    background-image: url("images/white-plaster-texture.png");
+    line-height: normal;
+   
+
+}
+
+h1{
+    display: flex;
+}
+
+h2{
+    font-size: 30px;
+    display: flex;
+    margin-left: 4px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    margin-top: 100px;
+    align-items: flex-end;
+}
+
+h3{
+  font-size: 30px;
+  padding: 10px;
+  background-image: url("bilder/white-paint-brush-stroke-2.png");
+  background-size: cover;
+  background-position: center;
+  line-height: 1.2em; /* make line height when wrap better*/
+}
+
+h4{
+  
+    font-style: italic;
+    background-image: url("bilder/white-paint-brush-stroke-2.png");
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    flex-shrink: initial;       
+    margin-right: 10px;  /* gap to next item */
+    margin-bottom: 10px; /* gap to next row important if a wrap on small screens is caused */
+}
+
+h5{
+  font-style: italic;
+  font-size: 150%;
+  padding: 10px;
+  margin: 0;
+  font-weight: normal;
+
+}
+
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;   
+  list-style: none;  
+  justify-content: right;
+  margin: 0;
+  font-size: 30px;
+  padding: 0;
+
+   /* margin-bottom: -10px; MARGIN-bottom on list item compensation */
+  
+}
+
+nav ul li {
+  display: flex;       /* children are flexbox here */
+  margin-right: 10px;  
+  margin-bottom: 10px; 
+  justify-content: right;
+}
+
+nav ul li a {
+  font-size: medium;
+  padding-left: 0px;
+  padding-right: 12px;
+  padding-top: 10px;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #0D170F;
+  
+}
+
+
+nav ul li a:hover {
+  color: black;
+  /*opacity also available*/
+ 
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: inherit;
+}
+
+
+/*maps*/
+#map {
+  box-sizing: border-box;
+  align-self: center;
+  width: 725px;
+  height: 500px;
+  border-radius: 10px;
+  border: 6px solid darkgray;
+}
+
+
+.map {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  align-self: center;
+/*check actual size of image to make appropriate container size*/
+  /*justify-content: left;*/
+  background-image: url('bilder/usabase.png');
+  background-size: auto;
+  
+
+  /* top = 0, left = 0 is the default!! */
+  }
+
+.map .marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  /* see margins, these mean that the point adjusting on the map will be the center of the x, more or less*/
+  margin-left: -10px;
+  margin-top: -10px;
+  z-index: 1;
+  background-image: url('bilder/1x/Asset\ 1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  /* top, left, ... */
+  }
+
+.map .area {
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  height: 157px;
+  /*border requires both size and style, the color is optional!*/
+  border: 4px dotted #dc0d07;
+  border-radius: 10px;
+  opacity: .8;
+}
+/*.mapframe{
+  overflow: hidden;
+    width: 1000px;
+    height: 800px;
+    border-left: 200px;
+    border-top: 50px;
+    border-color: aliceblue;
+    color: blueviolet;
+    z-index: 2; 
+    }
+    experiment with framing? */
+    
+
+
+/* boxes*/
+
+/* wrap is for narrow screens */
+
+
+
+  /*.block-example {
+    width: 30%;
+    border: 15px black;
+    margin: 10px 0 30px;    
+}*/
+/*
+.headerbox {
+  width: 30%;
+  border: 15px black;
+  margin: 10px 0 30px;    
+} */
+
+/*other*/
+/*could not get this to center. eventually took it
+out of the main tag and placed it on it's own, still uncentered, but at least that left the border off as in bilder/borderproblem.jpg*/
+/*solved using float within the paragraphs!*/
+
+
+
+.imgstyle{
+  float: right;
+  justify-content: right;
+  padding: 40px;
+  width: 300px;
+  background-color: #0E1116;
+  width: 30%;
+  
+}
+
+figcaption {
+  display: flex;
+  float: left;
+  position: left;
+  box-sizing: content-box;
+  z-index: 0;
+  flex-wrap: wrap;
+  font-size: 60%;
+  padding: 4px;
+  
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 1.0em;
+}
+
+a {
+    color: #000000;
+}
+
+a:visited {
+    color: #2d0463;
+}
+
+a:hover {
+    color: #ff6666;
+}
+
+span.suggestion {
+    font-style: italic;
+}
+
+cite {
+    border: 1px solid rgba(0,0,0,0.1); 
+    border-radius: 5px;
+    padding: 3px 7px;
+}
+
+
