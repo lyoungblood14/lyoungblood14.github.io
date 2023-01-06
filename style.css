@@ -11,7 +11,7 @@ html { /* this sets everything up */
     font-weight: normal;
     font-style: normal;  
     line-height: 1.4em; 
-    background-image: url("images/white-plaster-texture.png");
+    background-image: url("images/paper2.jpg");
     
     /*find a better background */
   }
@@ -52,9 +52,14 @@ header {
     align-items: baseline;
     width: 100%;
     font-size: 60px;
-    background-image: url("images/white-plaster-texture.png");
+    /* background-image: url("images/white-plaster-texture.png"); */
     line-height: normal;
-   
+}
+
+main {
+display: flex;
+padding-top: 15%;
+
 
 }
 
@@ -73,15 +78,12 @@ h2{
     padding-left: 0%;
     margin-top: 100px;
     align-items: flex-end;
+    width: 80%;
 }
 
 h3{
-  font-size: 30px;
-  padding: 10px;
-  background-image: url("bilder/white-paint-brush-stroke-2.png");
-  background-size: cover;
-  background-position: center;
-  line-height: 1.2em; /* make line height when wrap better*/
+  font-size: 15px;
+  /* make line height when wrap better*/
 }
 
 h4{
@@ -105,26 +107,24 @@ h5{
 
 }
 
+nav {
+ 
+display: flex;
+
+  margin-bottom: -10px;
+  
+}
+
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;   
-  list-style: none;  
-  justify-self: right;
-  justify-content: right;
-  margin: 0;
-  font-size: 30px;
-  padding: 0;
-
-   /* margin-bottom: -10px; MARGIN-bottom on list item compensation */
+  margin-bottom: 30px; 
   
 }
 
 nav ul li {
   display: flex;       /* children are flexbox here */
-  margin-right: 10px;  
-  margin-bottom: 10px; 
-  justify-content: right;
+
 }
 
 nav ul li a {
@@ -235,7 +235,8 @@ section {
   margin: 10px 0 30px;    
 } */
 
-/*other*/
+/*other    Photo by <a href="https://unsplash.com/fr/@olga_o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olga Thelavart</a> on <a href="https://unsplash.com/backgrounds/art/paper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
 /*could not get this to center. eventually took it
 out of the main tag and placed it on it's own, still uncentered, but at least that left the border off as in bilder/borderproblem.jpg*/
 /*solved using float within the paragraphs!*/
