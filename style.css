@@ -45,7 +45,7 @@ header {
     margin: 0;
     font-family: 'Josefin Slab', serif;
     position: fixed;
-    padding: 10px;
+    padding: 10%;
     display: flex;
     color: #0F401A;
     flex-wrap: wrap;
@@ -66,7 +66,7 @@ h1{
 h2{
     font-size: 30px;
     display: flex;
-    margin-left: 4opx;
+    margin-left: 0px;
     margin-bottom: 0px;
     flex-wrap: wrap;
     flex-grow: 4;
