@@ -42,7 +42,7 @@ html { /* this sets everything up */
 /* SECTIONSTYLES */
 
 header {
-    margin: 0;
+    margin: 10%;
     font-family: 'Josefin Slab', serif;
     position: fixed;
     padding: 10%;
