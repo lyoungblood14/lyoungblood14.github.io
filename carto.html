@@ -72,7 +72,9 @@
       <div id="text2"></div>
     </figure>
     <figure class="gallery__item gallery__item--6">
-      <img src="images/outsetcanyouseeclearly.png" class="gallery__img" alt="Image 6">
+      <img src="images/outsetcanyouseeclearly.png" class="gallery__img" alt="Image 6"
+      id="image3" onMouseOver="showText3('Can you see clearly now?')" onMouseOut="hide3();">
+      <div id="text3"></div>
     </figure>
   </div>
 
@@ -101,6 +103,13 @@ function showText2(text){
 }
 function hide2(){
     document.getElementById("text2").innerHTML="";
+}
+
+function showText3(text){
+    document.getElementById("text3").innerHTML=text;
+}
+function hide3(){
+    document.getElementById("text3").innerHTML="";
 }
 </script>
 
