@@ -23,8 +23,12 @@
   src="http://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
 <style>
-  
+  h3{
+  padding-top: 15%;
+  /* make line height when wrap better*/
+}
 </style>
+<body>
 <header>
   <h2>Lydia Youngblood</h2>     
 <nav>
@@ -37,17 +41,72 @@
  
 </header>
 
+<h3>This page is under construction. Hover or click on a project to learn more. </h3>    
 <main>
-    <h3>This page is under construction.</h3>     
 
+  <div class="gallery">
+    <figure class="gallery__item gallery__item--1">
+      
+      <a href="https://cartographymaster.eu/studentwork/kenans-climb-honoring-kenans-record-hike/"><img src="images/Kenan'sClimbForWebsite.png" class="gallery__img" alt="Image 1" 
+        id="image1" onMouseOver="showText('Kenan’s Climb: Honoring Alexander Kenan’s record-breaking hike')" onMouseOut="hide();">
+      
+      </a>
+      <div id="text"></div>
+      
+
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      
+      <img src="images/young_lee_ceballos_yang_Panorama.svg" class="gallery__img" alt="Image 2">
+      
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <img src="images/Downtown Durham.png" class="gallery__img" alt="Image 3">
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+      <img src="images/Screenshot 2023-01-08 152407.jpg" class="gallery__img" alt="Image 4">
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+      <img src="images/sportfit.png" class="gallery__img" alt="Image 5"
+      id="image2" onMouseOver="showText2('SportFit app: Open sports locations in Dresden')" onMouseOut="hide2();">
+      <div id="text2"></div>
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+      <img src="images/outsetcanyouseeclearly.png" class="gallery__img" alt="Image 6">
+    </figure>
+  </div>
+
+</main>
+</body>
 
 
 <script>
+//https://cartographymaster.eu/studentwork/mp-group7/
+// this scroll thing not working. Want to have it so when you scroll, there is a shadow appearing. 
+$(window).scroll(function(){
+if (document.body.scrollTop === 0)
+     $(".nav").css({"color":"#dc0d07"});
+else
+      $(".nav").css({"color":"#dc0d07"});
+});
 
+function showText(text){
+    document.getElementById("text").innerHTML=text;
+}
+function hide(){
+    document.getElementById("text").innerHTML="";
+}
+function showText2(text){
+    document.getElementById("text2").innerHTML=text;
+}
+function hide2(){
+    document.getElementById("text2").innerHTML="";
+}
 </script>
 
 
-</main>
+
+
 </html>
 
 
