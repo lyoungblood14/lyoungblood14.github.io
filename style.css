@@ -316,9 +316,6 @@ div {
   
 }
 
-.gallery__img:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.9); 
-}
 
 .gallery__item--1 {
   grid-column-start: 1;
@@ -326,6 +323,11 @@ div {
   grid-row-start: 1;
   grid-row-end: 9;
 }
+
+.gallery__item--1:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.9); 
+}
+
 
 .gallery__item--2 {
   grid-column-start: 1;
