@@ -8,6 +8,7 @@ html { /* this sets everything up */
     font-weight: normal;
     font-style: normal;  
     line-height: 1.4em; 
+    padding: 3%;
     background-image: url("images/paper2.jpg");
     
     /*find a better background */
@@ -21,7 +22,6 @@ html { /* this sets everything up */
     margin: 0px;
     width: 100%;
     margin-left: 0px;
-    padding: 2%;
     
   }
   
@@ -48,10 +48,8 @@ header {
     align-items: baseline;
     width: inherit;
     font-size: 60px;
-    padding: 0px;
     margin-bottom: 50px;
-    
-    /* background-image: url("images/white-plaster-texture.png"); */
+    justify-content: space-between;
     line-height: normal;
 }
 
@@ -79,7 +77,6 @@ h2{
 
 .titletext {
   display: flex;
-  width: 80%;
   float: left;
 
 
@@ -271,8 +268,6 @@ img {
 
 .specialimg {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
 }
 
