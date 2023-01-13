@@ -23,25 +23,26 @@
   src="http://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
 <style>
-  h3{
-  padding-top: 15%;
-  /* make line height when wrap better*/
-}
+
 </style>
 <body>
-<header>
-  <h2>Lydia Youngblood</h2>     
-<nav>
-<ul>
-      <li><a href="carto.html">carto</a></li>
-      <li><a href="photo.html">photo</a></li>
-      <li><a href="bio.html">bio</a></li>
-  </ul>
-</nav> 
- 
-</header>
+  <header>
+    <div class="titletext">
+      <h2>Lydia Youngblood</h2>
 
-<h3>This page is under construction. Hover or click on a project to learn more. </h3>    
+      
+    </div>    
+  <nav>
+  <ul>
+        <li><a href="carto.html">carto</a></li>
+        <li><a href="photo.html">photo</a></li>
+        <li><a href="bio.html">bio</a></li>
+    </ul>
+  </nav> 
+ <h3>This page is under construction. </h3>   
+
+  </header>
+
 <main>
 
   <div class="gallery">
@@ -68,12 +69,12 @@
     </figure>
     <figure class="gallery__item gallery__item--5">
       <a href="SportFit.html"><img src="images/sportfit.png" class="gallery__img" alt="Image 5"
-      id="image2" onMouseOver="showText2('SportFit app: Open sports locations in Dresden')" onMouseOut="hide2();">
+      id="image2" onMouseOver="showText2('SportFit App')" onMouseOut="hide2();">
       </a>
       <div id="text2"></div>
     </figure>
     <figure class="gallery__item gallery__item--6">
-      <a href="https://storymaps.arcgis.com/stories/55ba688bdcb840dfae11bbe30ffb1870"><img src="images/outsetcanyouseeclearly.png" class="gallery__img" alt="Image 6"
+      <a href="ClearlyNow.html"><img src="images/outsetcanyouseeclearly.png" class="gallery__img" alt="Image 6"
       id="image3" onMouseOver="showText3('Can you see clearly now?')" onMouseOut="hide3();">
       </a>
       <div id="text3"></div>
@@ -89,9 +90,9 @@
 // this scroll thing not working. Want to have it so when you scroll, there is a shadow appearing. 
 $(window).scroll(function(){
 if (document.body.scrollTop === 0)
-     $(".nav").css({"color":"#dc0d07"});
+     $(".header").css({"color":"#dc0d07"});
 else
-      $(".nav").css({"color":"#dc0d07"});
+      $(".header").css({"color":"#dc0d07"});
 });
 
 function showText(text){
