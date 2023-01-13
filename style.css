@@ -3,9 +3,6 @@ am afraid I will lose elements.*/
 
 html { /* this sets everything up */
     margin: 0%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 2%;
     height: 100%;
     font-family: 'KoHo', sans-serif;
     font-weight: normal;
@@ -24,7 +21,7 @@ html { /* this sets everything up */
     margin: 0px;
     width: 100%;
     margin-left: 0px;
-    padding: 0;
+    padding: 2%;
     
   }
   
@@ -44,7 +41,6 @@ html { /* this sets everything up */
 header {
     margin: 0px;
     font-family: 'Josefin Slab', serif;
-    position: absolute;
     display: flex;
     color: #0F401A;
     flex-wrap: wrap;
@@ -52,6 +48,8 @@ header {
     align-items: baseline;
     width: inherit;
     font-size: 60px;
+    padding: 0px;
+    margin-bottom: 50px;
     
     /* background-image: url("images/white-plaster-texture.png"); */
     line-height: normal;
@@ -59,9 +57,6 @@ header {
 
 main {
 display: flex;
-margin-top: 230px;
-
-
 }
 
 h1{
@@ -92,7 +87,6 @@ h2{
 
 h3{
   font-size: 15px;
-  margin-top: 10px;
   /* make line height when wrap better*/
 }
 
