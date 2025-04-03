@@ -4,6 +4,7 @@ am afraid I will lose elements.*/
 html { /* this sets everything up */
     margin: 0%;
     height: 100%;
+    width: 80%;
     font-family: 'KoHo', sans-serif;
     font-weight: normal;
     font-style: normal;  
@@ -267,7 +268,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  pointer-events: none;
 }
 
 
